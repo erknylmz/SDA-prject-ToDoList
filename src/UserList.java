@@ -14,12 +14,8 @@ public class UserList implements Serializable{
 	
 		user = new User();
 		fileio = new FileIO();
-		
 		userList = (ArrayList<User>) fileio.readAsObject("User.txt");
 		
-	}
-	void readUserList() {
-	 
 	}
 	
 	void createNewAcoount(User user) {
