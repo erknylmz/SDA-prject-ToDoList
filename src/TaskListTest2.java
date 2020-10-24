@@ -8,7 +8,7 @@ class TaskListTest2 {
 
 	/* 
 	 * we chose edit task in the menu and 
-	 * delete ToDOlist test task
+	 * delete ToDOlist "test" task
 	 */
 	@Test
 	void testdeleteTask() {
