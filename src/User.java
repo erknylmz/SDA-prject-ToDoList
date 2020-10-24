@@ -33,17 +33,18 @@ public class User implements Serializable{
 		this.userName = userName;
 		this.passWord = passWord;
 	}
-	Scanner userScan;
+	
 	
 	void enterUserData() {
 		
-		userScan = new Scanner(System.in);
+		Scanner userScan = new Scanner(System.in);
 		System.out.print(">> Enter username:");
 		setUserName(userScan.nextLine());
 		
 		System.out.print(">> Enter password:");
 		setPassWord(userScan.nextLine());
 	}
+	
 	@Override
 	public String toString() {
 		return userName+" :"+ passWord;

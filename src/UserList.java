@@ -15,7 +15,7 @@ public class UserList implements Serializable{
 		user = new User();
 		fileio = new FileIO();
 		
-		userList = (ArrayList<User>) fileio.readAsObject("/Users/erkanyilmaz/eclipse-workspace/ProjectToDOListLast/User.txt");
+		userList = (ArrayList<User>) fileio.readAsObject("User.txt");
 		
 	}
 	void readUserList() {
@@ -24,7 +24,7 @@ public class UserList implements Serializable{
 	
 	void createNewAcoount(User user) {
 		userList.add(user);
-		fileio.writeAsObject(userList,"/Users/erkanyilmaz/eclipse-workspace/ProjectToDOListLast/User.txt");
+		fileio.writeAsObject(userList,"User.txt");
 	}
 	
 	
